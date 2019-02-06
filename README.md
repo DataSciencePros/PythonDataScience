@@ -1,23 +1,32 @@
-# PythonDataScience with pipenv
+# PythonDataScience with venv and pip
+(The fork for using pipenv is here: https://github.com/DrOzturk/PythonDataScience. Bevare: If you are using PyCharm, pipenv may cause some difficulties.)
+
 Starter data science project using Python with common dependencies included...  
 Pull requests welcome...
 ```bash
 # clone this repo to local
 git clone git@github.com:DrOzturk/PythonDataScience.git
-# if you don't have python 3 as default, first do this
-pipenv --three
-# create virtual environment with dependencies defined in Pipenv file
-pipenv install
-# start shell in that virtual environment
-pipenv shell
+```
+# Create a Virtual Environment and activate it:
+https://docs.python.org/3/tutorial/venv.html
+
+# Installing the dependencies
+```bash
+pip install -r requirements.txt
 ```
 
 # Adding new dependencies
-If you add the new dependency using pipenv, it will be automatically added to Pipfile.
-ex:
+If you add a new dependency to the project using pip
+like:
 ```bash
-pipenv install pandas
+pip install pandas
 ```
+You will also need to update the requirements.txt
+```bash
+pip freeze > requirements.txt
+```
+before checking into the repository.
+
 # Developer Tools
 ## Linting
 - pycodestyle <filename>: use to check if code complies with code style guide
@@ -41,7 +50,7 @@ python setup.py --help-commands
 ## Unit Test Running
 - Running all unit tests in the command line:
 ```bash
-python -m unittest -v example_package/tests/test_example.py`
+python -m unittest -v example_package/tests/test_example.py
 ```
 - Running a specific test in a TestExample class in test_example test module:
 ```bash

@@ -12,8 +12,8 @@ def readme():
 #     python setup.py --help-commands
 setup(name='example_package',
       version='0.0.1',
-      description='A sample package to show how libraries are packaged in python',
-      url='http://tinyurl.com/PythonStarter',
+      description='A sample repo for a starter Python Data Science project without using pipenv',
+      url='http://tinyurl.com/PythonStarter2',
       author='Ozgur Ozturk',
       author_email='',
       license='MIT',
