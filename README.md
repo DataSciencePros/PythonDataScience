@@ -8,7 +8,18 @@ Pull requests welcome...
 git clone git@github.com:DrOzturk/PythonDataScience.git
 ```
 # Create a Virtual Environment and activate it:
-https://docs.python.org/3/tutorial/venv.html
+```bash
+python -m venv myenv
+```
+On Windows, run:
+```bash
+myenv\Scripts\activate
+```
+On Unix or MacOS, run:
+```bash
+source myenv/bin/activate
+```
+More: https://docs.python.org/3/tutorial/venv.html
 
 # Installing the dependencies
 ```bash
