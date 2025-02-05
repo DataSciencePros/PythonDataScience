@@ -21,6 +21,24 @@ source myenv/bin/activate
 ```
 More: https://docs.python.org/3/tutorial/venv.html
 
+If you need to exit the virtual environment, command:
+```
+deactivate
+```
+
+# To connect from Jupyter to this kernel in the virtual env,
+After above virtual environment activation
+```bash
+# install ipykernel, which consists of IPython as well
+pip install ipykernel
+# create a kernel that can be used to run notebook commands inside the virtual environment
+python -m ipykernel install --user --name=myenv
+# you can now find this myenv as an available kernel in your Jupyter if it is already running
+# else you can launch JupyterLab from virtual environment:
+jupyter lab
+```
+More: https://medium.com/@royce963/setting-up-jupyterlab-and-a-virtual-environment-c79002e0e5f7
+
 # Installing the dependencies
 ```bash
 pip install -r requirements.txt
